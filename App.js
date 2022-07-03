@@ -3,7 +3,7 @@ import {useNetInfo} from '@react-native-community/netinfo';
 import {View, Text, Image, ActivityIndicator} from 'react-native';
 import {WebView} from 'react-native-webview';
 import {images} from './src/constants';
-const URL = 'https://event.sportpay.bi/agent';
+const URL = 'https://event.sportpay.bi/admin';
 const App = () => {
   const netInfo = useNetInfo();
   const [isConnected, setIsConnected] = useState(false);
