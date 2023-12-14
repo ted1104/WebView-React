@@ -3,7 +3,7 @@ import {useNetInfo} from '@react-native-community/netinfo';
 import {View, Text, Image, ActivityIndicator} from 'react-native';
 import {WebView} from 'react-native-webview';
 import {images} from './src/constants';
-const URL = 'https://event.sportpay.bi/admin';
+const URL = 'https://nitunda.tao-business.com';
 const App = () => {
   const netInfo = useNetInfo();
   const [isConnected, setIsConnected] = useState(false);
@@ -35,7 +35,7 @@ const NoInternetConnexion = () => {
       }}>
       <Image source={images.no_connexion} resizeMode="contain" />
       <Text style={{color: 'red', fontWeight: 'bold'}}>
-        Veuillez verifier votre connexion internet!
+        Veuillez vérifier votre connexion internet!
       </Text>
     </View>
   );
